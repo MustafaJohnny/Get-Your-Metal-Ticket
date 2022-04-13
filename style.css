@@ -1,0 +1,119 @@
+:root {
+  --mainWhite: #3e3f3f;
+  --mainBrown: #3e3f3f;
+  --darkBrown: #0f0101;
+}
+body {
+  background-color: #494f58;
+  background-image: linear-gradient(315deg, #0c0c0c 15%, #363636 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.input-group-text {
+  background: var(--mainBrown);
+  color: var(--mainWhite);
+  border-color: var(--mainBrown);
+}
+.form-control {
+  border: 0.2rem solid var(--mainBrown);
+  background-color: #f1f5f9;
+}
+
+.submitBtn {
+  color: #e6e7e7;
+  background: #404040cb;
+  transition: all 0.4s ease-in-out;
+}
+.submitBtn:hover {
+  background: #404040ad;
+  color: #e6e7e7;
+}
+
+.fail {
+  border-color: #7f1d1d;
+}
+.complete {
+  border-color: #14532d;
+}
+.feedback {
+  display: none;
+}
+.loading {
+  display: none;
+}
+:disabled {
+  opacity: 0.2 !important;
+}
+.showItem {
+  display: block;
+}
+
+h3 {
+  color: #e6e7e7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.customer-name {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.customer-course {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.course-author {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+footer {
+  color: #fff;
+  opacity: 40%;
+  margin-bottom: 0.6rem;
+  margin-top: 4rem;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}

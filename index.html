@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/music-2.png" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./style.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Get Your Ticket App</title>
+    <style></style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-11 mx-auto text-center my-5">
+          <form class="my-5" id="tickets-form">
+            <h3 class="text-capitalize">get your metal ticket 🤘🏻</h3>
+            <div class="feedback text-center text-capitalize">
+              Searching For Tickets.....
+            </div>
+            <!-- single input -->
+            <div class="input-group my-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"
+                  ><i class="fas fa-user"></i
+                ></span>
+              </div>
+              <input
+                type="text"
+                class="form-control text-capitalize name"
+                id="band-name"
+                placeholder="band name"
+              />
+            </div>
+            <!-- end of single input -->
+            <!-- single input -->
+            <div class="input-group my-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"
+                  ><i class="fas fa-book"></i
+                ></span>
+              </div>
+              <input
+                type="text"
+                class="form-control text-capitalize course"
+                placeholder="city"
+                id="city"
+              />
+            </div>
+            <!-- end of single input -->
+            <!-- single input -->
+            <div class="input-group my-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"
+                  ><i class="fas fa-user-circle"></i
+                ></span>
+              </div>
+              <input
+                type="text"
+                class="form-control text-capitalize author"
+                placeholder="price"
+                id="price"
+              />
+            </div>
+            <!-- end of single input -->
+            <button
+              type="submit"
+              id="search-btn"
+              class="submitBtn btn btn-block mt-4"
+            >
+              Get
+            </button>
+          </form>
+
+          <div class="loading">
+            <div class="lds-ripple">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="row tickets-list">
+            <!-- single customer -->
+            <div class="col-11 mx-auto col-md-6 col-lg-4 my-3">
+              <div class="card text-left">
+                <img src="./img/cust-0.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <!-- customer name -->
+                  <h6 class="text-capitalize">
+                    <span class="badge badge-warning mr-2">band name :</span
+                    ><span class="customer-name">Metallica</span>
+                  </h6>
+                  <!-- end of customer name -->
+                  <!-- customer name -->
+                  <h6 class="text-capitalize my-3">
+                    <span class="badge badge-success mr-2">city :</span
+                    ><span class="customer-course">Moscow </span>
+                  </h6>
+                  <!-- end of customer name -->
+                  <!-- customer name -->
+                  <h6 class="text-capitalize">
+                    <span class="badge badge-danger mr-2">price :</span
+                    ><span class="course-author">140$</span>
+                  </h6>
+                  <!-- end of customer name -->
+                </div>
+              </div>
+
+              <!-- single customer -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>Designed © 2022 By Mustafa Johnny</footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
