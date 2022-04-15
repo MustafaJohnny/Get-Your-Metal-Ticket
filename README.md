@@ -10,7 +10,7 @@ Get Your Metal Ticket is really simple and fun project. The user have/has to inp
 
 ## Links
 
-- Live Site URL:
+- Live Site URL: https://mustafajohnny.github.io/Get-Your-Metal-Ticket/
 
 ## Built with
 
